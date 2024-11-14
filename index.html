@@ -12,10 +12,77 @@
     height: 100px;
   }
 
-  /* Style the logo */
   h1 {
     font-size: 2em;
-    margin: 0;
+    color: red;
+  }
+
+  #main-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 10px;
+    color:rgb(178, 40, 93)
+  }
+
+  h3 {
+    font-size: 1.5em;
+    color: black;
+    text-align: center;
+    margin-top: 40;
+    margin-bottom: 5px;
+  }
+  
+  h4{ 
+    font-size: 1.5em;
+    color: black;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  h5 {
+    font-size: 1.5em;
+    color: black;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .shoe-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .shoe-item {
+    text-align: center;
+    width: 200px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .shoe-item img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .price {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 10px;
+  }
+
+  .buy-link {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
   }
 </style>
 </head>
@@ -23,16 +90,62 @@
 <header>
   <h1>FL</h1>
 </header>
+
 <main>
   <section id="intro">
-  </section>
-  
-  <section id="about">
-  </section>
-  
-  <section id="contact">
+    <h2 id="main-title">TOP SHOES FOR WINTER 2025</h2>
+    <h3> BALENCIAGA </h3>
+    <div class="shoe-gallery">
+      <div class="shoe-item">
+        <img src="https://balenciaga.dam.kering.com/m/67016ce030ed9ec3/Large-717807W0FOI1000_F.jpg?v=3" alt="Shoe 1">
+        <p class="price">$1,400</p>
+        <a href="https://www.balenciaga.com/en-us/steroid-boot-black-717807W0FOI1000.html" class="buy-link" target="_blank">Buy Here</a>
+      </div>
+      <div class="shoe-item">
+        <img src="https://balenciaga.dam.kering.com/m/2e7bfb9345c937a0/Large-772774W3RMU1279_F.jpg?v=3" alt="Shoe 2">
+        <p class="price">$1,190</p>
+        <a href="https://www.balenciaga.com/en-us/runner-sneaker--white-green-blue-772774W3RMU9034.html" class="buy-link" target="_blank">Buy Here</a>
+      </div>
+      <div class="shoe-item">
+        <img src="https://balenciaga.dam.kering.com/m/38ed1ddc89b7f9dc/Large-780561W4SA11000_F.jpg?v=3" alt="Shoe 3">
+        <p class="price">$1,325</p>
+        <a href="https://www.balenciaga.com/en-us/alaska-low-boot-black-780561W4SA11000.html" class="buy-link" target="_blank">Buy Here</a>
+      </div>
+    </div>
+    <h4> RICK OWENS</h4>
+    <div class="shoe-gallery">
+      <div class="shoe-item">
+        <img src="https://cdn.rickowens.eu/products/177352/large/DU02C5800_DOEM9_9811_01.jpeg?1719318065" alt="Shoe 4">
+        <p class="price">$710</p>
+        <a href="https://www.rickowens.eu/en/US/women/products/ds02d2800doem9-9811" class="buy-link" target="_blank">Buy Here</a>
+      </div>
+      <div class="shoe-item">
+        <img src="https://cdn.rickowens.eu/products/176163/large/RP02D3898_LCOW2_9181_01.jpg?1718020652" alt="Shoe 5">
+        <p class="price">$1,235</p>
+        <a href="https://www.rickowens.eu/en/US/men/products/ru02d6898lcow2-9181" class="buy-link" target="_blank">Buy Here</a>
+      </div>
+      <div class="shoe-item">
+        <img src="https://cdn.rickowens.eu/products/179714/large/DU02D2844_MWPAW2_9811_01.jpg?1721917251" alt="Shoe 6">
+        <p class="price">$855</p>
+        <a href="https://www.rickowens.eu/en/US/men/products/du02d2844mupaw2-9811" class="buy-link" target="_blank">Buy Here</a>
+      </div>
+    </div>
+    <h5> CAROL CHRISTIAN POELL</h5>
+    <div class="shoe-gallery">
+      <div class="shoe-item">
+        <img src="https://thelibrary1994.com/cdn/shop/files/CCPAM_2524ROOMS_19_1.jpg?v=1711632238&width=493" alt="Shoe 7">
+        <p class="price">$1,495</p>
+        <a href="https://thelibrary1994.com/products/object-dyed-no-seam-drip-rubber-sneaker-3" class="buy-link" target="_blank">Buy Here</a>
+      </div>
+      <div class="shoe-item">
+        <img src="https://thelibrary1994.com/cdn/shop/files/TheLibrary-CarolChristianPoell-9_091e0e43-d979-48b0-8f32-8773a057cfb9.jpg?v=1708788064&width=493" alt="Shoe 8">
+        <p class="price">$1,375</p>
+        <a href="https://thelibrary1994.com/products/object-dyed-lined-diagonal-zip-goodyear-boot-8" class="buy-link" target="_blank">Buy Here</a>
+      </div>
+    </div>
   </section>
 </main>
+
 <footer>
 </footer>
 </body>
