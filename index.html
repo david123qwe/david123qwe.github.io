@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("hamburger-icon").onclick = function() {
+        const menu = document.getElementById("menu-items");
+        menu.style.display = menu.style.display === "none" || !menu.style.display ? "block" : "none";
+      };
+    });
+    </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fashion Wear</title>
+<title>Foot Luxe</title>
 <style>
   header {
     display: flex;
@@ -30,6 +38,7 @@
     text-align: center;
     margin-top: 40;
     margin-bottom: 5px;
+    text-shadow: 10px 10px 2px #ff0000;
   }
   
   h4{ 
@@ -38,6 +47,7 @@
     text-align: center;
     margin-top: 5px;
     margin-bottom: 5px;
+    text-shadow: 10px 10px 2px #ff0000;
   }
 
   h5 {
@@ -46,7 +56,47 @@
     text-align: center;
     margin-top: 5px;
     margin-bottom: 5px;
+    text-shadow: 10px 10px 2px #ff0000;
   }
+
+  h6 {
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-shadow: 10px 10px 2px #ff0000;
+  }
+
+  #hamburger-icon {
+  font-size: 2em;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #ffffff;
+}
+
+#menu-items {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#menu-items li {
+  list-style: none;
+  margin: 5px 0;
+}
+
+#menu-items a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
 
   .video-background {
   position: fixed;
@@ -115,6 +165,16 @@
 </header>
 
 <main>
+  <nav id="nav-menu">
+    <div id="hamburger-icon">&#9776;</div>
+    <ul id="menu-items">
+      <li><a href="#shoes">Shoes</a></li>
+      <li><a href="#pants">Pants</a></li>
+      <li><a href="#hoodies">Hoodies</a></li>
+      <li><a href="#accessories">Accessories</a></li>
+    </ul>
+  </nav>
+  
   <section id="intro">
     <h2 id="main-title">TOP SHOES FOR WINTER 2025</h2>
     <h3> BALENCIAGA </h3>
@@ -164,6 +224,31 @@
         <img src="https://thelibrary1994.com/cdn/shop/files/TheLibrary-CarolChristianPoell-9_091e0e43-d979-48b0-8f32-8773a057cfb9.jpg?v=1708788064&width=493" alt="Shoe 8">
         <p class="price">$1,375</p>
         <a href="https://thelibrary1994.com/products/object-dyed-lined-diagonal-zip-goodyear-boot-8" class="buy-link" target="_blank">Buy Here</a>
+      </div>
+    </div>
+    <h6>-----MORE-----</h6>
+    <div class="shoe-gallery">
+      <div class="shoe-item">
+        <img src="https://balenciaga.dam.kering.com/m/3ff67c7894512ab8/Large-672502WBCQ01000_F.jpg?v=5" alt="Shoe 9">
+        <p class="price">$1,800</p>
+        <a href="https://www.balenciaga.com/en-us/bulldozer-lace-up-boot-black-672502WBCQ01000.html" class="buy-link" target="_blank">Buy Here</a>
+      </div>
+      <div class="shoe-item">
+        <img src="https://assets.timberland.com/images/t_img/f_auto,h_650,w_650/e_sharpen:60/dpr_2.0/v1718945576/TB110061713-HERO/Mens-Timberland-Premium-6Inch-Waterproof-Boot.png" alt="Shoe 10">
+        <p class="price">$198</p>
+        <a href="https://www.timberland.com/en-us/p/men/footwear-10039/mens-timberland-premium-6-inch-waterproof-boot-TB110061713" class="buy-link" target="_blank">Buy Here</a>
+      </div>
+      <div class="shoe-item">
+        <img src="https://balenciaga.dam.kering.com/m/2de6c7116d5193b2/Large-734734W3XL51143_F.jpg?v=2" alt="Shoe 11">
+        <p class="price">$1,190</p>
+        <a href="https://www.balenciaga.com/en-us/3xl-sneaker-beige-734734W3XL59110.html" class="buy-link" target="_blank">Buy Here</a>
+      </div>
+    </div>
+    <div class="shoe-gallery">
+      <div class="shoe-item">
+        <img src="https://balenciaga.dam.kering.com/m/71996a56621dbbf/Large-694042W2H131000_F.jpg?v=1" alt="Shoe 12">
+        <p class="price">$1,325</p>
+        <a href="https://www.balenciaga.com/en-us/combat-strike-20mm-boot-black-694042W2H131000.html" class="buy-link" target="_blank">Buy Here</a>
       </div>
     </div>
   </section>
